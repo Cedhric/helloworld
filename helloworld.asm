@@ -1,6 +1,6 @@
+          BasicUpstart2(start)
           .encoding "petscii_upper"
-          * =$c000
-          ldx #$00
+start:    ldx #$00
 loop:     lda htext,x
           beq done
           jsr $ffd2
